@@ -135,7 +135,7 @@ main {
   padding: 100px 0px;
   color: antiquewhite;
   font-weight: 800;
-  font-family: cursive;
+
   margin: 0 auto;
 }
 .frase {
@@ -149,7 +149,6 @@ main {
   width: 40%;
   align-content: center;
   justify-content: center;
-  font-family: "Zilla Slab", serif;
 }
 
 .frase2 {
@@ -169,7 +168,6 @@ main {
   );
   color: transparent;
   background-clip: text;
-  font-family: "Zilla Slab", serif;
 }
 .frase2 p {
   font-size: 22px;
@@ -200,7 +198,6 @@ footer {
   );
   color: transparent;
   background-clip: text;
-  font-family: "Zilla Slab", serif;
 }
 
 .footer-links {
