@@ -145,11 +145,11 @@ main {
   flex-direction: column;
 }
 .frase p {
-  font-family: "Zilla Slab", serif;
   display: flex;
   width: 40%;
   align-content: center;
   justify-content: center;
+  font-family: "Zilla Slab", serif;
 }
 
 .frase2 {
@@ -157,7 +157,6 @@ main {
   padding: 50px 0;
   width: 70%;
   margin: 0 auto;
-  font-family: "Zilla Slab", serif;
 }
 .frase2 h2 {
   padding: 30px 0px;
@@ -170,6 +169,7 @@ main {
   );
   color: transparent;
   background-clip: text;
+  font-family: "Zilla Slab", serif;
 }
 .frase2 p {
   font-size: 22px;
@@ -187,11 +187,20 @@ footer {
   justify-content: center;
   gap: 40px;
   padding: 70px 0;
+  font-family: "Zilla Slab", serif;
 }
 
-footer p {
-  font-weight: 300;
-  font-size: 20px;
+#contactos h2 {
+  font-weight: 600;
+  font-size: 50px;
+  background: linear-gradient(
+    360deg,
+    rgb(83, 40, 40) 0%,
+    rgba(140, 0, 0, 1) 60%
+  );
+  color: transparent;
+  background-clip: text;
+  font-family: "Zilla Slab", serif;
 }
 
 .footer-links {
@@ -199,14 +208,15 @@ footer p {
   gap: 30px;
 }
 
-footer span {
-  font-weight: 800;
-}
 #menu-toggle {
   display: none;
 }
 .menu-label {
   display: none;
+}
+.imglogo {
+  width: 30px;
+  height: 30px;
 }
 
 @media (max-width: 992px) {
