@@ -46,7 +46,7 @@
 }
 .links {
   border-radius: 10%;
-  background: rgb(102, 43, 43);
+
   color: red;
 }
 
@@ -105,7 +105,7 @@ main {
   font-weight: 800;
   background: linear-gradient(
     360deg,
-    rgb(83, 40, 40) 0%,
+    rgb(155, 58, 58) 0%,
     rgba(140, 0, 0, 1) 60%
   );
   color: transparent;
@@ -115,7 +115,7 @@ main {
 .info p {
   font-size: 16px;
   width: 70%;
-  color: grey;
+  color: antiquewhite;
 }
 
 .info a {
@@ -133,7 +133,7 @@ main {
   text-align: center;
   font-size: 26px;
   padding: 100px 0px;
-  color: rgb(255, 251, 251);
+  color: antiquewhite;
   font-weight: 800;
   font-family: cursive;
   margin: 0 auto;
@@ -202,8 +202,43 @@ footer p {
 footer span {
   font-weight: 800;
 }
+#menu-toggle {
+  display: none;
+}
+.menu-label {
+  display: none;
+}
 
 @media (max-width: 992px) {
+  .navbarlist {
+    position: absolute;
+    top: 65px;
+    left: 5%;
+    right: 5%;
+    flex-direction: column;
+
+    background: #15181c;
+    border: 2px solid rgb(83, 40, 40);
+    border-top: 0;
+    border-radius: 0px 0px 15px 15px;
+    gap: 25px;
+    padding: 50px;
+    align-items: center;
+    display: none;
+  }
+  .navbarlist a {
+    font-size: 1.3rem;
+  }
+  .menu-label {
+    display: flex;
+  }
+  .menu-label img {
+    width: 25px;
+    height: 20px;
+  }
+  #menu-toggle:checked + .navbarlist {
+    display: flex;
+  }
   #home {
     flex-direction: column-reverse;
     gap: 20px;
@@ -217,7 +252,7 @@ footer span {
     width: 100%;
   }
   .imagen-portada {
-    padding: 0 15px;
+    padding: 10px 15px;
     max-width: 100%;
   }
   .imagen-portada img {
